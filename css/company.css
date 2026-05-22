@@ -1,0 +1,239 @@
+#wrap{
+    width: 100%;
+}
+#head{
+    position: relative;
+    width: 100%;
+    height: 110px;
+}
+#head header{
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 110px;
+    background-color: #ffffffd9;
+    border-bottom: 1px solid #FE337E;
+    z-index: 9999;
+}
+#head header .mn{
+    display: flex;
+    width: 88%;
+    height: 110px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#head header .ttl{
+    font-family: Holtwood One SC, serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #FE337E;
+}
+#head header nav ul{
+    display: flex;
+    gap: 40px;
+}
+#head header nav ul li{
+    font-size: 16px;
+    color: #767676;
+}
+#head header nav ul li:hover{
+    color: #FE337E;
+    cursor: pointer;
+}
+
+#area{
+    margin: 0 auto;
+    width: 100%;
+    height: 20vw;
+    background-color: #ffd7e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#area h3{
+    font-family: Holtwood One SC, serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #FE337E;
+}
+
+#conts{
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 100%;
+}
+#menu{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+    
+}
+#menu li{
+    width: 20%;
+    height: 50px;
+    background-color: #ffffffd9;
+    border: 1px solid #FE337E;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu li:hover{
+    background-color: #FE337E;
+    color: #ffffff;
+    cursor: pointer;
+}
+#first{
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 90%;
+}
+#first .no1{
+    display: flex;
+    justify-content: space-between;
+}
+#first .no1 .profileimg{
+    width: 25vw;
+    height: 25vw;
+    background: url(../img/no1.jpg) no-repeat center;
+    background-size: cover;
+}
+#first .no1 .txt{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#first .no1 .txt span{
+    font-size: 16px;
+    color: #767676;
+    line-height: 150%;
+}
+
+#first .no2{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#first .no2 .profileimg{
+    width: 25vw;
+    height: 25vw;
+    background: url(../img/no2.jpg) no-repeat center;
+    background-size: cover;
+}
+#first .no2 .profile > p{
+    text-align: right;
+}
+#first .no2 .txt{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#first .no2 .txt span{
+    font-size: 16px;
+    color: #767676;
+    line-height: 150%;
+}
+
+#second{
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 90%;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#second h4{
+    text-align: center;
+    font-size: 36px;
+    color: #FE337E;
+    line-height: 150%;
+}
+#second .line{
+    width: 1px;
+    height: 245px;
+    background-color: #FE337E;
+}
+
+#third{
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 90%;
+    height: 35vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#third .thirdbd{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #FE337E;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+#third .thirdbd p{
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    line-height: 300%;
+    color: #ffffff;
+    font-weight: 400;
+}
+#third .imgarea{
+    position: absolute;
+    bottom: -100px;
+    left: 70px;
+    display: flex;
+    width: 97%;
+    justify-content: space-between;
+}
+
+
+#foot{
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 100%;
+    height: 340px;
+    background: url(../img/footer.svg) no-repeat center;
+    color: #ffffff;
+}
+#foot ul{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+#foot ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#foot ul li:last-child{
+    width: 213px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+#foot ul li:last-child:hover{
+    background-color: #ffffff;
+    color: #FE337E;
+    cursor: pointer;
+}
