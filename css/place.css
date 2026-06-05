@@ -71,18 +71,83 @@
     width: 100%;
     height: 100%;
     background-color: #FE337E;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 20px 20px 15px #fe337d80;
 }
 #size{
-    width: 80%;
+    width: 100%;
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-
+#size .logo{
+    width: 70%;
+}
+#size .logo > ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#size .logo ul li{
+    width: 150px;
+    height: 50px;
+}
+#size .logo ul li.name{
+    background: url(../img/home.svg) no-repeat center;
+}
+#size .logo ul li.number{
+    background: url(../img/call.svg) no-repeat center;
+}
+#size .logo ul li.time{
+    background: url(../img/time.svg) no-repeat center;
+}
+#size .logo ul li.location{
+    background: url(../img/direction.svg) no-repeat center;
+}
+#size .logo ul li.go{
+    background: url(../img/computer.svg) no-repeat center;
+}
+#size .list{
+    padding-top: 50px;
+    width: 70%;
+    height: 100%;
+    gap: 20px;
+}
+#size .list>li{
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+#size .active{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+#size .active li{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#size .active li.goicon{
+    width: 150px;
+    height: 50px;
+    background: url(../img/heart.svg) no-repeat center;
+    background-size: contain;
+}
 
 #foot{
     margin: 0 auto;
