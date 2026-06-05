@@ -24,12 +24,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const moreBtn = document.querySelector('#hello_friends .btn');
-    if (moreBtn) {
-        moreBtn.style.cursor = 'pointer';
-        moreBtn.addEventListener('click', () => {
-            location.href = 'characters.html';
-        });
-    }
-    
 });

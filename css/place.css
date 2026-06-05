@@ -1,0 +1,121 @@
+#wrap{
+    width: 100%;
+}
+#head{
+    position: relative;
+    width: 100%;
+    height: 110px;
+}
+#head header{
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 110px;
+    background-color: #ffffffd9;
+    border-bottom: 1px solid #FE337E;
+    z-index: 9999;
+}
+#head header .mn{
+    display: flex;
+    width: 88%;
+    height: 110px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#head header .ttl{
+    font-family: Holtwood One SC, serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #FE337E;
+}
+#head header nav ul{
+    display: flex;
+    gap: 40px;
+}
+#head header nav ul li{
+    font-size: 16px;
+    color: #767676;
+}
+#head header nav ul li:hover{
+    color: #FE337E;
+    cursor: pointer;
+}
+
+#area{
+    margin: 0 auto;
+    width: 100%;
+    height: 20vw;
+    background-color: #ffd7e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#area h3{
+    font-family: Holtwood One SC, serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #FE337E;
+}
+
+#conts{
+    padding-top: 150px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 90%;
+    height: 750px;  
+}
+#conts #bg{
+    width: 100%;
+    height: 100%;
+    background-color: #FE337E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#size{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#foot{
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 100%;
+    height: 340px;
+    background: url(../img/footer.svg) no-repeat center;
+    color: #ffffff;
+}
+#foot ul{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+#foot ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#foot ul li:last-child{
+    width: 213px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+#foot ul li:last-child:hover{
+    background-color: #ffffff;
+    color: #FE337E;
+    cursor: pointer;
+}
