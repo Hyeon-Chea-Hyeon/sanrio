@@ -33,31 +33,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const mnbd = document.querySelector('.mnbd');
-    const arrows = document.querySelectorAll('.arrow');
+    const mnbdchild = mnbd.children;
+    const mn1 = document.querySelector('.mnbd >ul')[0];
+    let n = 0;
+    let targetx = 0;
 
-    let current = 0;
-    const max = 1; // mn1, mn2 두 장
+    for(let i=0; i<mnbdchild.length; i++){
+        mnbdchild[i].addEventListener('click', function(){
+            n = i;
+            targetx = -100 * n;
+            mnbd.style.transform = `translateX(${targetx}%)`;
+        });
+    }
 
-    // 오른쪽 화살표
-    arrows[1].addEventListener('click', () => {
-        if(current < max){
-            current++;
-        }else{
-            current = 0;
+    const arrow = document.querySelectorAll('.arrow');
+    arrow[0].addEventListener('click', function(){
+        n--;
+        if(n < 0){
+            n = mnbdchild.length - 1;
         }
-
-        mnbd.style.transform = `translateX(-${current * 100}%)`;
+        targetx = -100 * n;
+        mnbd.style.transform = `translateX(${targetx}%)`;
     });
 
-    // 왼쪽 화살표
-    arrows[0].addEventListener('click', () => {
-        if(current > 0){
-            current--;
-        }else{
-            current = max;
+    arrow[1].addEventListener('click', function(){
+        n++;
+        if(n >= mnbdchild.length){
+            n = 0;
         }
-
-        mnbd.style.transform = `translateX(-${current * 100}%)`;
+        targetx = -100 * n;
+        mnbd.style.transform = `translateX(${targetx}%)`;
     });
-    
 });
