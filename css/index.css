@@ -347,6 +347,7 @@
 }
 #third article > .btnarea .btn1.unselected{
     border: 1px solid #ffffff;
+    background-color: transparent;
     width: 15px;
 }
 #third article > .btnarea .btn2{

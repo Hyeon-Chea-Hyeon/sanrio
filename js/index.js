@@ -32,36 +32,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const mnbd = document.querySelector('.mnbd');
-    const mnbdchild = mnbd.children;
-    const mn1 = document.querySelector('.mnbd >ul')[0];
-    let n = 0;
-    let targetx = 0;
+    const slider = document.querySelector('#slider .mnbd');
 
-    for(let i=0; i<mnbdchild.length; i++){
-        mnbdchild[i].addEventListener('click', function(){
-            n = i;
-            targetx = -100 * n;
-            mnbd.style.transform = `translateX(${targetx}%)`;
-        });
+    const leftBtn = document.querySelectorAll('.arrow')[0];
+    const rightBtn = document.querySelectorAll('.arrow')[1];
+
+    const btn1 = document.querySelector('.btn1');
+    const btn2 = document.querySelector('.btn2');
+
+    let current = 0;
+
+    function updateSlide(){
+
+        slider.style.transform =
+            `translateX(-${current * 50}%)`;
+
+        if(current === 0){
+            btn1.classList.remove('unselected');
+            btn2.classList.remove('selected');
+        }else{
+            btn1.classList.add('unselected');
+            btn2.classList.add('selected');
+        }
     }
 
-    const arrow = document.querySelectorAll('.arrow');
-    arrow[0].addEventListener('click', function(){
-        n--;
-        if(n < 0){
-            n = mnbdchild.length - 1;
-        }
-        targetx = -100 * n;
-        mnbd.style.transform = `translateX(${targetx}%)`;
+    rightBtn.addEventListener('click', () => {
+        current = 1;
+        updateSlide();
     });
 
-    arrow[1].addEventListener('click', function(){
-        n++;
-        if(n >= mnbdchild.length){
-            n = 0;
-        }
-        targetx = -100 * n;
-        mnbd.style.transform = `translateX(${targetx}%)`;
+    leftBtn.addEventListener('click', () => {
+        current = 0;
+        updateSlide();
+    });
+
+    btn1.addEventListener('click', () => {
+        current = 0;
+        updateSlide();
+    });
+
+    btn2.addEventListener('click', () => {
+        current = 1;
+        updateSlide();
     });
 });
