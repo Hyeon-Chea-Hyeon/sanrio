@@ -290,6 +290,12 @@
     width: 70%;
     overflow: hidden;
     right: 0;
+    flex:1;
+    transition: transform 0.5s ease;
+}
+#third article .thirdbd .mnbd > ul{
+    flex-shrink: 0;
+    width: 100%;
 }
 #third article .thirdbd ul{
     display: flex;
@@ -310,6 +316,9 @@
     height: auto;
     filter: invert(33%) sepia(87%) saturate(5427%) hue-rotate(323deg) brightness(100%) contrast(99%);
     padding-bottom: 20px;
+}
+#third article .thirdbd .arrow{
+    z-index: 9999;
 }
 #third article .thirdbd .arrow:hover{
     cursor: pointer;

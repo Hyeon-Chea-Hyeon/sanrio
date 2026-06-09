@@ -31,5 +31,33 @@ document.addEventListener('DOMContentLoaded', () => {
             location.href = 'characters.html';
         });
     }
+
+    const mnbd = document.querySelector('.mnbd');
+    const arrows = document.querySelectorAll('.arrow');
+
+    let current = 0;
+    const max = 1; // mn1, mn2 두 장
+
+    // 오른쪽 화살표
+    arrows[1].addEventListener('click', () => {
+        if(current < max){
+            current++;
+        }else{
+            current = 0;
+        }
+
+        mnbd.style.transform = `translateX(-${current * 100}%)`;
+    });
+
+    // 왼쪽 화살표
+    arrows[0].addEventListener('click', () => {
+        if(current > 0){
+            current--;
+        }else{
+            current = max;
+        }
+
+        mnbd.style.transform = `translateX(-${current * 100}%)`;
+    });
     
 });
