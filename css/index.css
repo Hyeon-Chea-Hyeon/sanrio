@@ -306,16 +306,16 @@
     justify-content: center;
     align-items: center;
 }
-#third article .thirdbd ul > li > img{
+#third article #thirdbd ul > li > img{
     width: 80px;
     height: auto;
     filter: invert(33%) sepia(87%) saturate(5427%) hue-rotate(323deg) brightness(100%) contrast(99%);
     padding-bottom: 20px;
 }
-#third article .thirdbd .arrow{
+#third article #thirdbd .arrow{
     z-index: 9999;
 }
-#third article .thirdbd .arrow:hover{
+#third article #thirdbd .arrow:hover{
     cursor: pointer;
     transform: scale(130%) ;
 }
