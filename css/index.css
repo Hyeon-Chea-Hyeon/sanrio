@@ -56,6 +56,11 @@
     background-size: cover;
     z-index: 0;
 }
+#head .mainimg video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
 
 #first{
     margin: 0 auto;
